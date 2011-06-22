@@ -1,0 +1,15 @@
+	<p>&nbsp;</p>
+	<div class="content-primary">
+	<ul data-role="listview" data-theme="d" data-inset="true" data-dividertheme="d" class="ui-listview">
+		<% @results.each do |t| %>
+		<li data-theme="d" class="ui-btn ui-btn-icon-right ui-li ui-btn-down-d ui-btn-up-d">
+		<div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#" class="ui-link-inherit">
+			<!-- <%= image_tag "http://foursquare.com/img/specials/#{t["icon"]}.png", :class => "ui-li-thumb" %> -->
+			<h3 class="ui-li-heading"><%= t["message"]%></h3>
+			<p class="ui-li-desc"><%= t["venue"]["name"]%></p>
+			<p class="ui-li-desc"><%= t["venue"]["location"]["address"] %> <%= t["venue"]["location"]["city"] %> <%= t["venue"]["location"]["state"] %></p>
+			<p class="ui-li-desc"><em><%= t["finePrint"]%></em></p>
+		</a></div></div></li>
+		<% end %>
+	</ul>
+	</div>
