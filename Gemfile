@@ -14,9 +14,9 @@ gem 'oauth2'
 
 gem 'foursquare2'
 
-gem 'httparty'
-gem 'crack'
-gem 'geocoder'
+# gem 'httparty'
+# gem 'crack'
+# gem 'geocoder'
 
 # Use unicorn as the web server
 # gem 'unicorn'

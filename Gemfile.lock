@@ -31,23 +31,19 @@ GEM
     addressable (2.2.6)
     arel (2.0.10)
     builder (2.1.2)
-    crack (0.1.8)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     faraday (0.6.1)
       addressable (~> 2.2.4)
       multipart-post (~> 1.1.0)
-      rack (< 2, >= 1.1.0)
+      rack (>= 1.1.0, < 2)
     faraday_middleware (0.6.3)
       faraday (~> 0.6.0)
     foursquare2 (1.1.0)
       faraday (~> 0.6)
       faraday_middleware (~> 0.6)
       hashie (~> 1.0)
-    geocoder (1.0.1)
     hashie (1.0.0)
-    httparty (0.7.8)
-      crack (= 0.1.8)
     i18n (0.5.0)
     jquery-rails (1.0.11)
       railties (~> 3.0)
@@ -95,10 +91,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  crack
   foursquare2
-  geocoder
-  httparty
   jquery-rails
   oauth2
   rails (= 3.0.9)
